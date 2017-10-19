@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#input{
+				width: 300px;
+				height: 50px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" name="" value=""  id="input">
+        <button id="but" style="background:blue;">提交</button>
+	    <script type="text/javascript">
+		var inp=document.getElementById('input');
+		var but=document.getElementById('but')		
+		but.onclick=function(){
+			if(inp.value.length>60){				
+				but.style.backgroundColor='red'
+			}else{				
+				but.style.backgroundColor='blue'
+			}
+		}
+	</script>
+	</body>
+	
+</html>
